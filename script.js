@@ -79,3 +79,16 @@ var todoList = {
   }
   
 };
+
+// Get access to display todos button and toggle button
+var displayTodosButton = document.getElementById("displayTodosButton");
+var toggleAllButton = document.getElementById("toggleAllButton");
+
+// Run displayTodos method and toggle all method when someone clicks the display todos button and toggle all
+displayTodosButton.addEventListener('click', function() {
+  todoList.displayTodos();
+});
+
+toggleAllButton.addEventListener('click', function() {
+  todoList.toggleAll();
+});
