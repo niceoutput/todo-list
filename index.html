@@ -8,10 +8,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        
+
         <h1>My Todo list</h1>
-        <button onclick="handlers.displayTodos()">Display Todos</button>
-        <button onclick="handlers.toggleAll()">Toggle All</button>
+        <div>
+            <button onclick="handlers.displayTodos()">Display Todos</button>
+            <button onclick="handlers.toggleAll()">Toggle All</button>
+        </div>
+        <div>
+            <button onClick="handlers.addTodo()">Add</button>
+            <input type="text" id="addTodoTextInput">
+        </div>
+
         <script src="script.js"></script>
     </body>
 </html>
